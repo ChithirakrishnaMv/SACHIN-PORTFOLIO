@@ -1,0 +1,160 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+  }
+  
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  .bgimg-1 {
+    background-image: url('./sachin-1.jpg');
+    min-height: 100%;
+  }
+  
+  .bgimg-2 {
+    background-image: url("./sachin-2.jpeg");
+    min-height: 400px;
+  }
+  
+  .bgimg-3 {
+    background-image: url("./sachin-3.jpg");
+    min-height: 400px;
+  }
+  
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+  
+  .caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+  
+  h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+  }
+  
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: scroll;
+    }
+  }
+
+
+/* "*" is universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+/* navbar section */
+.navbar{
+    display: flex;
+    /* align-items: center; */
+    background-color: #000000e2;
+    position: sticky;
+    top: 0;
+    /* justify-content: end; */
+}
+.navbar img{
+  margin-left: 25px;
+}
+
+.navbar ul{
+    display: flex;
+    margin: 20px;
+    list-style: none;
+    padding-left: 50%;
+}
+.navbar ul li{
+    font-size: 15px;
+   
+}
+.navbar ul li a{
+    text-decoration: none;
+    padding-left: 20px;
+    color: rgb(255, 255, 255);
+}
+.navbar ul li a:hover{
+    color: rgb(255, 153, 0);
+    text-shadow: 1px 2px 2px rgb(226, 208, 174);
+}
+/* End navbar */
+/* home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(189, 167, 190, 0);
+    height: 850px;
+    justify-content: center;
+    align-items: center;
+    color:rgb(42, 5, 44) ;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background-image: url('https://cdn.wallpapersafari.com/70/80/zo9LSi.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 850px;
+    width: 100%;
+    z-index: -1; /*The z-index CSS property sets the z-order of a positioned element and its descendants or flex items. Overlapping elements with a larger z-index cover those with a smaller one. */
+    /* opacity: 1; */
+}
+.main{
+    border: 1px solid whitesmoke;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 20%;
+    top: 30%;
+}
+.heading1{
+    font-family: 'Signika', sans-serif;
+    text-align: center;
+    margin: 10px; 
+}
+.heading{
+    font-family: 'Genos', sans-serif;
+    text-align: center;
+    margin: 10px;
+    font-size: 52px;
+    
+}
+.btn{
+    padding: 10px 30px;
+    background-color: transparent;
+    transition: .6s;
+    border-radius: 3px;
+    border-color: whitesmoke;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(236, 229, 216);
+    box-shadow: 0 0 5px whitesmoke ,0 0 10px rgb(210, 199, 199),0 0 15px rgb(183, 146, 146);
+}
+/* end home section  */
